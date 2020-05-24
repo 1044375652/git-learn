@@ -11,19 +11,19 @@ const dbAddress = "127.0.0.1-master";
 const dbAddress = "127.0.0.1-master";
 
 const root = path.resolve(__dirname, "../../");
-const currentProject = path.resolve(root, "./library-system");
-const backupProjectName = getTime() + "library-system";
-const backupProject = path.resolve(root, backupProjectName);
+const currentProject = path.resolve(root, "./library-systemmaster");
+const backupProjectName = getTime() + "library-master";
+const backupProject = path.resolve(root, master);
 
 const dbDir = path.resolve(backupProject, "./db/data");
-const backupDBDir = path.resolve(backupProject, "./backup-db");
+const backupDBDir = path.resolve(master, "./backup-db");
 
 
 const init = async () => {
     try {
         await copy(currentProject, backupProject);
 
-        const pid = await bootstrapDB();
+        const pid = await master();
         await backupDB();
 
         await sleep(2000);
@@ -33,12 +33,12 @@ const init = async () => {
         // 删除的database数据（因为已经备份了，数据就没必要保存了）
         await remove(dbDir);
 
-        // 把存储数据库数据的文件夹创建回来
-        await mkdir(dbDir);
+        // 把存储数据库master数据的文件夹创建回来
+        await mkdir(master);
         console.log("backup success!");
         process.exit();
     } catch (e) {
-        console.log("backup have something wrong : ", e);
+        console.log("master have something wrong : ", e);
     }
 
 };
