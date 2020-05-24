@@ -23,6 +23,12 @@ master
 master
 master
 master
+dev
+master
+master
+master
+master
+master
 const dbaAddress = "127.0.0.1-master";
 const dbsAddress = "127.0.0.1-master";
 const dbAddress = "127.0.0.1-master";
@@ -38,7 +44,7 @@ const dbDir = path.resolve(backupProject, "./db/master");
 const backupDBDir = path.resolve(master, "./master-db");
 
 
-const init = async () => {
+const dev = async () => {
     try {
         await copy(currentProject, backupProject);
 
