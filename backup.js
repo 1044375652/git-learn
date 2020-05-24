@@ -23,9 +23,10 @@ master
 master
 master
 master
+const dbaAddress = "127.0.0.1-master";
+const dbsAddress = "127.0.0.1-master";
 const dbAddress = "127.0.0.1-master";
-const dbAddress = "127.0.0.1-master";
-const dbAddress = "127.0.0.1-master";
+const dbcAddress = "127.0.0.1-master";
 
 
 const root = path.resolve(__dirname, "../../");
