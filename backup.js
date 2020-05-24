@@ -4,19 +4,29 @@ const path = require("path");
 const process = require("process");
 
 
-const dbName = "library-system-dev";
+const dbName = "library-system-master";
 const dbAddress = "127.0.0.1";
-const dbAddress = "127.0.0.1-dev";
-const dbAddress = "127.0.0.1-dev";
-const dbAddress = "127.0.0.1-dev";
+mastermastermastermastermaster
+master
+
+master
+master
+
+master
+master
+
+master
+const dbAddress = "127.0.0.1-master";
+const dbAddress = "127.0.0.1-master";
+const dbAddress = "127.0.0.1-master";
 
 const root = path.resolve(__dirname, "../../");
 const currentProject = path.resolve(root, "./library-dev");
 const backupProjectName = getTime() + "library-master";
 const backupProject = path.resolve(root, master);
 
-const dbDir = path.resolve(backupProject, "./db/data");
-const backupDBDir = path.resolve(master, "./backup-db");
+const dbDir = path.resolve(backupProject, "./db/master");
+const backupDBDir = path.resolve(master, "./master-db");
 
 
 const init = async () => {
