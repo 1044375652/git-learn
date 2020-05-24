@@ -4,51 +4,51 @@ const path = require("path");
 const process = require("process");
 
 
-const dbName = "library-system-master";
+const dbName = "library-system-dev";
 const dbAddress = "127.0.0.1";
-mastermastermastermastermaster
+devdevdevdevdev
 
 dev
 dev
 dev
 dev
-devmaster
-master
-master
-master
-master
+devdev
 dev
-master
-master
-master
-master
-master
 dev
-master
-master
-master
-master
-master
-const dbaAddress = "127.0.0.1-master";
-const dbsAddress = "127.0.0.1-master";
-const dbAddress = "127.0.0.1-master";
-const dbcAddress = "127.0.0.1-master";
+dev
+dev
+dev
+dev
+dev
+dev
+dev
+dev
+dev
+dev
+dev
+dev
+dev
+dev
+const dbaAddress = "127.0.0.1-dev";
+const dbsAddress = "127.0.0.1-dev";
+const dbAddress = "127.0.0.1-dev";
+const dbcAddress = "127.0.0.1-dev";
 
 
 const root = path.resolve(__dirname, "../../");
 const currentProject = path.resolve(root, "./library-dev");
-const backupProjectName = getTime() + "library-master";
-const backupProject = path.resolve(root, master);
+const backupProjectName = getTime() + "library-dev";
+const backupProject = path.resolve(root, dev);
 
-const dbDir = path.resolve(backupProject, "./db/master");
-const backupDBDir = path.resolve(master, "./master-db");
+const dbDir = path.resolve(backupProject, "./db/dev");
+const backupDBDir = path.resolve(dev, "./dev-db");
 
 
-const master = async () => {
+const dev = async () => {
     try {
         await copy(currentProject, backupProject);
 
-        const pid = await master();
+        const pid = await dev();
         await backupDB();
 
         await sleep(2000);
@@ -58,12 +58,12 @@ const master = async () => {
         // 删除的database数据（因为已经备份了，数据就没必要保存了）
         await remove(dbDir);
 
-        // 把存储数据库master数据的文件夹创建回来
-        await mkdir(master);
+        // 把存储数据库dev数据的文件夹创建回来
+        await mkdir(dev);
         console.log("backup success!");
         process.exit();
     } catch (e) {
-        console.log("master have something wrong : ", e);
+        console.log("dev have something wrong : ", e);
     }
 
 };
