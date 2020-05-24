@@ -7,7 +7,20 @@ const process = require("process");
 const dbName = "library-system-master";
 const dbAddress = "127.0.0.1";
 mastermastermastermastermaster
-master
+
+dev
+dev
+
+dev
+
+dev
+dev
+
+dev
+dev
+dev
+dev
+dev
 
 master
 master
