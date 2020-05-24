@@ -44,7 +44,7 @@ const dbDir = path.resolve(backupProject, "./db/master");
 const backupDBDir = path.resolve(master, "./master-db");
 
 
-const dev = async () => {
+const master = async () => {
     try {
         await copy(currentProject, backupProject);
 
