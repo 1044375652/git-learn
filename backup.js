@@ -4,14 +4,14 @@ const path = require("path");
 const process = require("process");
 
 
-const dbName = "library-system-master";
+const dbName = "library-system-dev";
 const dbAddress = "127.0.0.1";
-const dbAddress = "127.0.0.1-master";
-const dbAddress = "127.0.0.1-master";
-const dbAddress = "127.0.0.1-master";
+const dbAddress = "127.0.0.1-dev";
+const dbAddress = "127.0.0.1-dev";
+const dbAddress = "127.0.0.1-dev";
 
 const root = path.resolve(__dirname, "../../");
-const currentProject = path.resolve(root, "./library-systemmaster");
+const currentProject = path.resolve(root, "./library-dev");
 const backupProjectName = getTime() + "library-master";
 const backupProject = path.resolve(root, master);
 
