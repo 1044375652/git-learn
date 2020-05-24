@@ -4,8 +4,8 @@ const path = require("path");
 const process = require("process");
 
 
-const dbName = "library-system";
-const dbAddress = "127.0.0.1";
+const dbName = "library-system-dev";
+const dbAddress = "127.0.0.1-dev";
 
 const root = path.resolve(__dirname, "../../");
 const currentProject = path.resolve(root, "./library-system");
